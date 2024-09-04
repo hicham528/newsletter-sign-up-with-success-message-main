@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+:root {
+  --Dark_Slate_Grey: hsl(234, 29%, 20%);
+  --Charcoal_Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --Tomato:hsl(4, 100%, 67%);
+  --Font_size: 16px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20PX;
+    background-color: var(--Charcoal_Grey);
+    padding: 20PX;
+}
+.container{
+    display: flex;
+    background-color: var(--White);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30PX;
+}
+.text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+
+    font-weight: 400;
+}
+.text_container h1{
+    color: var(--Charcoal_Grey);
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.details{
+    display: flex;
+    align-items: center;
+    gap: 10PX;
+}
+.email_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+    text-transform: capitalize;
+}
+.email_header{
+    display: flex;
+    justify-content: space-between;
+}
+.email_header h3{
+    color: var(--Dark_Slate_Grey);
+}
+.email_header span{
+    color: red;
+}
+.email_container input{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--Grey);
+    padding-left: 20PX;
+    outline: none;
+    font-size: 16px;
+}
+.email_container_errors input{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--Grey);
+    padding-left: 20PX;
+    outline: none;
+    font-size: 16px;
+    background-color: var(--Tomato);
+}
+
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+    appearance: button;
+    background-color: var(--Dark_Slate_Grey);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+   }
+   
+   button:after {
+    background-clip: padding-box;
+    background-color: var(--Dark_Slate_Grey);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   }
+   
+   button:main, button:focus {
+    user-select: auto;
+   }
+   
+   button:hover:not(:disabled) {
+    filter: brightness(1.1);
+   }
+   
+   button:disabled {
+    cursor: auto;
+   }
+   
+   button:active:after {
+    border-width: 0 0 0px;
+   }
+   
+   button:active {
+    padding-bottom: 10px;
+   }
+   .image_container img{
+    height: 400px;
+   }
+
+   .result{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10PX;
+    padding: 20PX;
+    background-color: var(--White);
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+   }
+   .result img{
+    height: 50px;
+    width: 50px;
+   }
+   .result h1{
+    font-size: 3rem;
+    color: var(--Dark_Slate_Grey);
+    text-transform: capitalize;
+   }
+   .email_adress{
+    font-weight: 800;
+   }
